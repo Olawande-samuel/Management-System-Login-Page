@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMS Login</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <!-- <link rel="stylesheet" href="./css/all.css"> -->
+    <script src="https://use.fontawesome.com/b0081f475b.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="links">
+                <ul>
+                    <li id="menu">MENU</li>
+                    <div class="right-nav">
+                        <li id="login" class="active">LOGIN</li>
+                        <li id="register">REGISTER</li>
+                    </div>
+                </ul>
+            </div>
+            <div class="hero">
+                <h1>Welcome to <span>FlyMind</span></h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, maiores?</p>
+                <div class="hero-footer">
+                    <button class="btn">Learn More</button>
+                    <i class="fas fa-2x fa-play-circle"></i>
+                </div>
+
+            </div>
+        </div>
+        <div class="right">
+            <!-- <div class="logo"></div> -->
+                <div class="form-wrapper">
+                    <form class="login">
+                        <div class="input-wrapper">
+                            <input type="text" id="username" autocomplete="off" required>
+                            <label for="Fname"><span><i class="fa fa-user-o" aria-hidden="true"></i>Username</span></label>
+                        </div>
+                        <div class="input-wrapper">
+                            <input type="password" name="password" id="password"  required>
+                            <label for="password"><span><i class="fa fa-lock" aria-hidden="true"></i>Password</span></label>
+                        </div>
+                        <button type="submit" class="btn">Login</button>
+                        
+                    </form>
+                    
+                    <form class="register">
+                        <div class="input-wrapper">
+                            <input type="text" id="Fname" required autocomplete="off">
+                            <label for="Fname"><span><i class="fa fa-user-o" aria-hidden="true"></i>First Name</span></label>
+                        </div>
+                        <div class="input-wrapper">
+                            <input type="text" id="Lname" required autocomplete="off">
+                            <label for="Lname"><span><i class="fa fa-user" aria-hidden="true"></i>Last Name</span></label>
+                        </div>
+                        <div class="input-wrapper" >
+                            <input type="number" id="personalKey" required>
+                            <label for="personalKey"><span><i class="fa fa-key" aria-hidden="true"></i>Pass Key</span></label>
+                        </div>
+                        <div class="input-wrapper">
+                            <input type="password" name="password" id="reg-password"  required>
+                            <label for="reg-password"><span><i class="fa fa-lock" aria-hidden="true"></i>Password</span></label>
+                        </div>
+                        <button type="submit" class="btn">Register</button>
+                    </form>
+                </div>
+                
+                <div class="footer">
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li>&#8226;</li>
+                        <li><a href="#">Impress</a></li>
+                        <li>&#8226;</li>
+                        <li><a href="#">Privacy</a></li>
+                        <li>&#8226;</li>
+                        <li><a href="#">Degrees</a></li>
+                    </ul>
+                </div>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>

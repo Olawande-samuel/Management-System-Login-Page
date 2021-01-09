@@ -1,0 +1,376 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.btn {
+  background: white;
+  color: #a91b0d;
+  padding: 8px 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.btn:hover, .btn:focus {
+  background: #a83a2f;
+  color: white;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .left {
+  -webkit-box-flex: 60%;
+      -ms-flex: 60%;
+          flex: 60%;
+  background: #a04e46;
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(80%, #a91b0d), to(#b97973));
+  background: linear-gradient(to right top, #a91b0d 80%, #b97973);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.container .left .links {
+  position: absolute;
+  right: -15px;
+  top: 10px;
+}
+
+.container .left .links li {
+  list-style: none;
+  margin-bottom: 5px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+  padding: 8px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.container .left .links li:hover {
+  background: beige;
+  color: #9394a5;
+}
+
+.container .left .links .active {
+  background: beige;
+  color: #9394a5;
+}
+
+.container .left .hero {
+  width: 60%;
+  color: white;
+}
+
+.container .left .hero h1 {
+  width: 60%;
+  margin: auto;
+  font-size: clamp(20px, 4vw, 50px);
+  font-weight: lighter;
+  margin-bottom: 5px;
+}
+
+.container .left .hero h1 span {
+  font-size: clamp(2rem, 6vw, 10rem);
+  font-weight: bolder;
+}
+
+.container .left .hero .hero-footer {
+  margin: auto;
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-content: center;
+}
+
+.container .left .hero .hero-footer button {
+  margin-right: 5px;
+  display: none;
+}
+
+.container .left .hero i {
+  display: inline-block;
+}
+
+.container .right {
+  -webkit-box-flex: 30%;
+      -ms-flex: 30%;
+          flex: 30%;
+  height: 100%;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.container .right .form-wrapper {
+  width: 80%;
+  height: 300px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  overflow: hidden;
+}
+
+.container .right form {
+  border-radius: 4px;
+  width: 100%;
+  background: #a91b0d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px 10px;
+  position: absolute;
+  line-height: 2;
+}
+
+.container .right form input,
+.container .right form label {
+  border: none;
+  outline: none;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.container .right form input {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 10px;
+  padding-top: 30px;
+  padding-bottom: 0;
+  background: #a91b0d;
+}
+
+.container .right form input:last-child {
+  margin-bottom: 0;
+}
+
+.container .right form input:focus + label span {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+.container .right form .input-wrapper {
+  position: relative;
+  width: 250px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.container .right form .input-wrapper label {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-bottom: 1px solid white;
+  left: 0;
+  pointer-events: none;
+  margin-top: 0;
+}
+
+.container .right form .input-wrapper label span {
+  position: absolute;
+  height: 30px;
+  margin-top: 0;
+  bottom: 10px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.container .right form .input-wrapper label i {
+  margin-right: 10px;
+}
+
+.container .right .register {
+  -webkit-transform: translateX(200%);
+          transform: translateX(200%);
+  line-height: 2;
+}
+
+.container .right .footer {
+  position: absolute;
+  bottom: 0;
+  padding: 5px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.container .right .footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.container .right .footer ul li {
+  margin-right: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  color: #9394a5;
+}
+
+.container .right .footer ul li a {
+  color: #9394a5;
+  text-decoration: none;
+}
+
+.container .right .footer ul li a:hover {
+  text-decoration: underline;
+}
+
+.container .right .footer ul li:last-child {
+  margin-right: 0;
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100vh;
+  }
+  .container .left {
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%;
+  }
+  .container .left .links {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 5px;
+    width: 100%;
+  }
+  .container .left .links ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .container .left .links ul li {
+    font-size: 0.5rem;
+  }
+  .container .left .links ul .right-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .container .left .hero {
+    text-align: center;
+  }
+  .container .right {
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+  }
+  .container .right .form-wrapper {
+    height: 100%;
+    overflow: visible;
+    min-height: 300px;
+    position: relative;
+  }
+  .container .right .form-wrapper form {
+    width: 100%;
+    border-radius: 4px;
+    background: white;
+  }
+  .container .right .form-wrapper form .input-wrapper {
+    width: 80%;
+  }
+  .container .right .form-wrapper form input {
+    width: 100%;
+    background: white;
+    color: #a91b0d;
+  }
+  .container .right .form-wrapper form label {
+    width: 100%;
+    border-bottom: 1px solid #a91b0d;
+    color: #a91b0d;
+  }
+  .container .right .form-wrapper form .btn {
+    width: 40%;
+    background: #a91b0d;
+    color: white;
+  }
+  .container .footer {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .container .right .form-wrapper form .btn {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
